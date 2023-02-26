@@ -14,10 +14,10 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
+import Information from "pages/LandingPages/PlaceSearch/sections/Information";
 
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
+import Featuring from "pages/LandingPages/PlaceSearch/sections/Featuring";
+import Newsletter from "pages/LandingPages/PlaceSearch/sections/Newsletter";
 
 // Routes
 
@@ -30,7 +30,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import { useEffect, useState } from "react";
 import apis from '../../../apis/placeAPIs';
-function AboutUs() {
+function PlaceSearch() {
   const [keyword, setkeyword] = useState()
   const [content, setcontent] = useState([])
 
@@ -171,4 +171,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default PlaceSearch;

@@ -28,7 +28,7 @@ import theme from "assets/theme";
 //  React routes
 
 import PlaceDetail from "pages/LandingPages/PlaceDetail";
-import AboutUs from "pages/LandingPages/AboutUs";
+import PlaceSearch from "pages/LandingPages/PlaceSearch";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -46,7 +46,7 @@ export default function App() {
       <CssBaseline />
       <Routes>
 
-        <Route path="/search" element={<AboutUs />} />
+        <Route path="/search" element={<PlaceSearch />} />
         <Route path="/search/detail/:id" element={<PlaceDetail />} />
         <Route path="*" element={<Navigate to="/search" />} />
         

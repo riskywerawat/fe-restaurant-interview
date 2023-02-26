@@ -4,7 +4,7 @@
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import SearchContent from "pages/LandingPages/AboutUs/sections/SearchContent";
+import SearchContent from "pages/LandingPages/PlaceSearch/sections/SearchContent";
 //  React components
 import MKBox from "components/MKBox";
 import React, { useState } from 'react';
