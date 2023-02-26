@@ -19,7 +19,12 @@
 
 ### demo photo
 
-![alt text](https://github.com/riskywerawat/fe-restaurant-interview/blob/main/src/assets/images/demo1.png?raw=true)
-![alt text](https://github.com/riskywerawat/fe-restaurant-interview/blob/main/src/assets/images/demo2.png?raw=true)
-![alt text](https://github.com/riskywerawat/fe-restaurant-interview/blob/main/src/assets/images/demo3.png?raw=true)
-![alt text](https://github.com/riskywerawat/fe-restaurant-interview/blob/main/src/assets/images/demo4.png?raw=true)
+![alt text](https://github.com/riskywerawat/fe-restaurant-interview/blob/main/src/assets/images/demo/demo1.png?raw=true)
+
+
+![alt text](https://github.com/riskywerawat/fe-restaurant-interview/blob/main/src/assets/images/demo/demo2.png?raw=true)
+
+![alt text](https://github.com/riskywerawat/fe-restaurant-interview/blob/main/src/assets/images/demo/demo3.png?raw=true)
+
+
+![alt text](https://github.com/riskywerawat/fe-restaurant-interview/blob/main/src/assets/images/demo/demo4.png?raw=true)
