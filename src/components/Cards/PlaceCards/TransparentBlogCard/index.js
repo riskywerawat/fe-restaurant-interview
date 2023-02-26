@@ -3,8 +3,8 @@
 *  React - v2.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-react
-* Copyright 2021  (https://www.creative-tim.com)
+
+
 
 
 

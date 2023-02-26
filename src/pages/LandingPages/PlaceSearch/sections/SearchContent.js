@@ -10,15 +10,13 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import { useEffect } from "react";
 //  React examples
-import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
+import HorizontalPlaceCard from "components/Cards/PlaceCards/HorizontalPlaceCard";
 
 
 // Images
-import team1 from "assets/images/team-5.jpg";
-import team2 from "assets/images/bruce-mars.jpg";
-import team3 from "assets/images/ivana-squares.jpg";
+
 import team4 from "assets/images/ivana-square.jpg";
-import { Box, Rating, Typography } from "@mui/material";
+
 
 export default function SearchContent(props) {
   const { data } = props;
@@ -65,7 +63,7 @@ export default function SearchContent(props) {
             return <>
               <Grid item xs={12} lg={6}>
                 <MKBox mb={{ xs: 1, lg: 0 }}>
-                  <HorizontalTeamCard
+                  <HorizontalPlaceCard
                     image={team4}
                     geometry={item.geometry}
                     place_id={item.place_id}

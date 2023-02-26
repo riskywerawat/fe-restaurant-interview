@@ -29,7 +29,7 @@ import apis from "../../../../apis/placeAPIs";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link, useNavigate } from 'react-router-dom';
-function HorizontalTeamCard({ image, photo_code, place_id, geometry, name, position, description, rating, online }) {
+function HorizontalPlaceCard({ image, photo_code, place_id, geometry, name, position, description, rating, online }) {
   const [photo, setphoto] = useState("")
   const navigate = useNavigate();
   useEffect(() => {
@@ -175,7 +175,7 @@ function HorizontalTeamCard({ image, photo_code, place_id, geometry, name, posit
 }
 
 // Typechecking props for the HorizontalTeamCard
-HorizontalTeamCard.propTypes = {
+HorizontalPlaceCard.propTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   position: PropTypes.shape({
@@ -194,4 +194,4 @@ HorizontalTeamCard.propTypes = {
   description: PropTypes.string.isRequired,
 };
 
-export default HorizontalTeamCard;
+export default HorizontalPlaceCard;

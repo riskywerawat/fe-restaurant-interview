@@ -9,7 +9,7 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 //  React components
-import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
+import TransparentBlogCard from "components/Cards/PlaceCards/TransparentBlogCard";
 
 function Places(props) {
   return (

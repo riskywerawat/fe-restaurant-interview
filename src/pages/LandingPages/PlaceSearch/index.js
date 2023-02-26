@@ -10,8 +10,8 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 //  React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+
+import DefaultFooter from "components/Footers/DefaultFooter";
 
 // About Us page sections
 import Information from "pages/LandingPages/PlaceSearch/sections/Information";
@@ -21,7 +21,6 @@ import Newsletter from "pages/LandingPages/PlaceSearch/sections/Newsletter";
 
 // Routes
 
-import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/thai_food.jpg";
@@ -30,6 +29,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import { useEffect, useState } from "react";
 import apis from '../../../apis/placeAPIs';
+import footerRoutes from "footer.routes";
 function PlaceSearch() {
   const [keyword, setkeyword] = useState()
   const [content, setcontent] = useState([])
@@ -165,7 +165,7 @@ function PlaceSearch() {
         <Newsletter />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+      <DefaultFooter content={footerRoutes} />
       </MKBox>
     </>
   );
