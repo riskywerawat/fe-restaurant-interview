@@ -15,11 +15,13 @@ import GoogleMapReact from 'google-map-react';
 import { useEffect, useState } from "react";
 
 import _ from 'lodash'
+import apis from "../../../../apis/globalAPIs";
 require('dotenv').config()
 function Contact(props) {
   const { geometry,formatted_address } = props.data;
   console.log("geometry",geometry)
-  const apiKey = process.env.REACT_APP_API_KEY
+ 
+  const [apiKeys, setapiKeys] = useState("")
 
   const image = localStorage.getItem('image');
   const [defaultProps, setdefaultProps] = useState({})
@@ -31,6 +33,8 @@ function Contact(props) {
   
   }, [geometry])
   const init = async () => {
+    let authService = await apis.getApiKey();
+    await setapiKeys(authService.data);
     await setMapProps(geometry.location.lat,geometry.location.lng)
   }
   const setMapProps = async (latitude,longitude) => {
@@ -114,7 +118,7 @@ function Contact(props) {
                 <MKBox>
                   <div style={{ height: '650px', width: '100%' }}>
                     {<GoogleMapReact
-                      bootstrapURLKeys={{ key: apiKey }}
+                      bootstrapURLKeys={{ key: apiKeys }}
                       defaultCenter={defaultProps.center}
                       defaultZoom={defaultProps.zoom}
                       onGoogleApiLoaded={({ map, maps }) => renderMarkers(map, maps)}

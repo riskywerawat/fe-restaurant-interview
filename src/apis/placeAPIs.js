@@ -4,7 +4,7 @@ const token = localStorage.getItem("token");
 const getPhotoRef = (data) => {
     console.log("getphoto", { ...data, maxwidth: 900 });
     return new Promise((resolve, reject) => {
-        axios.post(`http://localhost:3001/restaurant/getPhotoRefernce`, { ...data, maxwidth: 900 }, {
+        axios.post(` ${process.env.REACT_APP_BE_URL}/restaurant/getPhotoRefernce`, { ...data, maxwidth: 900 }, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'Authorization': token
@@ -21,7 +21,7 @@ const getPhotoRef = (data) => {
 const queryPlace = (data) => {
 
     return new Promise((resolve, reject) => {
-        axios.post(`http://localhost:3001/restaurant/queryPlace`, {
+        axios.post(`${process.env.REACT_APP_BE_URL}/restaurant/queryPlace`, {
             "textsearch": data
         }, {
             headers: {
@@ -38,9 +38,9 @@ const queryPlace = (data) => {
 }
 
 const getPlaceDetail = (data) => {
-
+   
     return new Promise((resolve, reject) => {
-        axios.post(`http://localhost:3001/restaurant/placeDetail`, {
+        axios.post(`${process.env.REACT_APP_BE_URL}/restaurant/placeDetail`, {
             "place_id":data
         }, {
             headers: {
@@ -58,7 +58,7 @@ const getPlaceDetail = (data) => {
 const getcontentProminence = (data) => {
 
     return new Promise((resolve, reject) => {
-        axios.get(`http://localhost:3001/restaurant/getcontentProminence`, {
+        axios.get(`${process.env.REACT_APP_BE_URL}/restaurant/getcontentProminence`, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'Authorization': token
